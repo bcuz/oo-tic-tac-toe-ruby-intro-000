@@ -122,4 +122,13 @@ def over?
   false
 
 end
+
+def winner(board)
+
+  if over?(board) and won?(board)
+    combo = won?(board)
+
+    return board[combo[0]]
+  end
+end
 end
