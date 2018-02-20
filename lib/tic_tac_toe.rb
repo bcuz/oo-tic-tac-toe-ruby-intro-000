@@ -100,7 +100,7 @@ def won?()
 
 end
 def full?
-  if board.include?(" ")
+  if @board.include?(" ")
     return false
   else
     return true
