@@ -123,12 +123,12 @@ def over?
 
 end
 
-def winner(board)
+def winner
 
-  if over?(board) and won?(board)
-    combo = won?(board)
+  if over? and won?
+    combo = won?
 
-    return board[combo[0]]
+    return @board[combo[0]]
   end
 end
 end
