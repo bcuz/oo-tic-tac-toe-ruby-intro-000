@@ -132,19 +132,19 @@ def winner
   end
 end
 
-def play(board)
+def play
   # 9.times do
   #   turn(board)
   # end
 
-  while over?(board) == false
-    turn(board)
+  while over? == false
+    turn
   end
 
-  if winner(board)
-    puts "Congratulations #{winner(board)}!"
+  if winner
+    puts "Congratulations #{winner}!"
 
-  elsif draw?(board)
+  elsif draw?
     puts "Cat's Game!"
   end
 
