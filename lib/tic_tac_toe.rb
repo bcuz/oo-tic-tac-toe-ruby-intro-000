@@ -115,8 +115,8 @@ def draw?
 
 end
 
-def over?(board)
-  if draw?(board) or won?(board) or full?(board)
+def over?
+  if draw? or won? or full?
     return true
   end
   false
