@@ -74,7 +74,7 @@ def turn()
   end
 end
 
-def won?(board)
+def won?()
   x = WIN_COMBINATIONS.select do |combo|
 
     win_index_1 = combo[0]
@@ -97,6 +97,6 @@ def won?(board)
   end
 
   x
-  
+
 end
 end
