@@ -73,4 +73,30 @@ def turn()
     turn
   end
 end
+
+def won?(board)
+  x = WIN_COMBINATIONS.select do |combo|
+
+    win_index_1 = combo[0]
+  win_index_2 = combo[1]
+  win_index_3 = combo[2]
+
+  position_1 = board[win_index_1] # load the value of the board at win_index_1
+  position_2 = board[win_index_2] # load the value of the board at win_index_2
+  position_3 = board[win_index_3] # load the value of the board at win_index_3
+
+  if position_1 == "X" && position_2 == "X" && position_3 == "X" or
+    position_1 == "O" && position_2 == "O" && position_3 == "O"
+    #
+    return combo # return the win_combination indexes that won.
+  end
+  end
+
+  if x == []
+    return false
+  end
+
+  x
+  
+end
 end
